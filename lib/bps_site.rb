@@ -13,4 +13,5 @@ require 'bps_site/controllers/admin'
 root = File.dirname(File.expand_path('..', __FILE__))
 Opal.append_path "#{root}/opal"
 
+require 'bps_site/helpers'
 require 'bps_site/app'
