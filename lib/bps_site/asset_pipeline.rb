@@ -25,6 +25,8 @@ module BpsSite
   						end
   						Opal.paths.each {|p|env.append_path p}
 
+              env.append_path settings.asset_folder
+
   						settings.asset_folders.each do |folder|
   							env.append_path "#{settings.asset_folder}/#{folder}"
   						end
