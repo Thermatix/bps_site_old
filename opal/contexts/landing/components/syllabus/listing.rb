@@ -1,6 +1,6 @@
 module Components
   module Landing
-    class Action_Bar < Base
+    class Listing < Base
 
       def render
         div do
