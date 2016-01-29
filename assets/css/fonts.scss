@@ -1,0 +1,13 @@
+$fonts-path: "/assets/fonts";
+$roboto-path: "#{$fonts-path}/roboto";
+
+$roboto-regular: "Roboto-Regular";
+$roboto-light: "Roboto-Light";
+$roboto-medium: "Roboto-Medium";
+$roboto-bold: "Roboto-Bold";
+$roboto-thin: "Roboto-Thin";
+
+
+@include font-face($roboto-regular,"#{$roboto-path}/#{$roboto-regular}");
+@include font-face($roboto-light,"#{$roboto-path}/#{$roboto-light}",null,italic);
+@include font-face($roboto-bold,"#{$roboto-path}/#{$roboto-bold}",bold,bold);
