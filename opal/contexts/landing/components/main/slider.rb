@@ -4,6 +4,7 @@ module Components
 
       def render
         div do
+          "Footer"
         end
       end
 

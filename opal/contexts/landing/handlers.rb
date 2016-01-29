@@ -1,12 +1,12 @@
 Ruta::Handlers.define_for :landing do
 
   handle :action_bar do |params,url|
-
+    Components::Landing::Action_Bar current_section: params[:sub_context]
   end
 
   handle :view_port do |params,url|
-    if %w{main gallery syllabus}.include? params[:context]
-      mount params[:context]
+    if %w{landing gallery syllabus}.include? params[:sub_context]
+      mount params[:sub_context]
     end
   end
 end

@@ -4,6 +4,7 @@ module Components
 
       def render
         div do
+          "slider"
         end
       end
 

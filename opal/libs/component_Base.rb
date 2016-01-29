@@ -18,7 +18,6 @@ module Components
 		end
 
 		def handle event,*args
-			# for_ident = args.shift if args.first.is_a? Symbol
 			field = yield
 			field.on(event) {|e|send("handle_#{event}",e,*args)}
 			return field
