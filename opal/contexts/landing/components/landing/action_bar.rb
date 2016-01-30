@@ -10,7 +10,7 @@ module Components
 
         div do
 
-          section class_name: "mui-appbar mui-row mui--z1" do#,style: {backgroundColor: "#424242"} do
+          section class_name: "mui-appbar mui-row mui--z1 dark-primary-color" do#,style: {backgroundColor: "#424242"} do
 
             Navigation selection: params.current_section
 
@@ -26,7 +26,7 @@ module Components
 
           end
 
-          Login_Modal display_modal: state.display_login
+          Login_Modal display_login: state.display_login, action_bar: self
 
         end
       end
@@ -34,7 +34,6 @@ module Components
       def handle_click
         state.display_login!(true)
       end
-
 
 
     end

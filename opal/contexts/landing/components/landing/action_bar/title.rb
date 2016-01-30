@@ -5,9 +5,13 @@ module Components
       param :value
 
       def render
-        h1 class_name: "mui--text-center mui-col-md-5" do
+        style = 
           {
-            about: "Barking PhotoGraphic Society",
+            fontFamily: "\"Times New Roman\", Times, serif"
+          }
+        h1 class_name: "mui--text-center mui-col-md-5", style: style do
+          {
+            about: "Barking Photographic Society",
             gallery: "Gallery",
             syllabus: "Club Syllabus"
           }[params.value]
