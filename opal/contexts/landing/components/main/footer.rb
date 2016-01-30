@@ -4,7 +4,7 @@ module Components
 
       def render
         div do
-          "slider"
+          "footer"
         end
       end
 

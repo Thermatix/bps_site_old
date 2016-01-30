@@ -3,11 +3,11 @@ Ruta::Context.define :landing do
     Components::Landing::Action_Bar
   end
 
-  sub_context :view_port, :main
+  sub_context :view_port, :about
 
 end
 
-Ruta::Context.define :main do
+Ruta::Context.define :about do
   component :view do
     Components::Landing::Slider
   end
