@@ -1,13 +1,9 @@
 module Components
   module Landing
-    class Slider < Base
-
+    class Slider::About_Us < Base
       def render
-        div do
-          "slider"
-        end
+        "about us"
       end
-
     end
   end
 end

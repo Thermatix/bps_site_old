@@ -4,16 +4,20 @@ module Components
       param :selection
 
       def render
-        section class_name: "mui-col-md-3 mui-col-md-offset-1" do
-          %w{about gallery syllabus}.delete_if { |el| el ==  params.selection}
+        ul class_name: "mui-tabs__bar" do
+          %w{about gallery syllabus}
           .each do |sub_context|
             handle :click, sub_context do
-              button class_name: "mui-btn mui-btn--large" do
+              li class_name: active?(sub_context) + m_col(1) + m_center do
                 sub_context
               end
             end
           end
         end
+      end
+
+      def active? sub_context
+        params.selection == sub_context ? "mui--is-active " : ""
       end
 
       def handle_click e, sub_context

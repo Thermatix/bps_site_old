@@ -1,13 +1,9 @@
 module Components
   module Landing
-    class Footer < Base
-
+    class Slider::News < Base
       def render
-        div do
-          "footer"
-        end
+        "news"
       end
-
     end
   end
 end

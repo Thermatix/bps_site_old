@@ -12,7 +12,7 @@ module Components
             position: 'fixed',
           }
           handle :MouseLeave do
-            section id:"login_modal", class_name: "mui-panel mui--align-top mui--z1 mui-col-md-4 mui-col-md-offset-8", style: modal_style do
+            section id:"login_modal", class_name: m_panel + m_align("top") + m_z(1) + m_col(4) + m_colof(8) , style: modal_style do
               "Login MODAL"
             end
           end

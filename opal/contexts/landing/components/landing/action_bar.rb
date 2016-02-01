@@ -9,8 +9,7 @@ module Components
       def render
 
         div do
-
-          section class_name: "mui-appbar mui-row mui--z1 dark-primary-color" do#,style: {backgroundColor: "#424242"} do
+          section class_name: m_app + m_row + m_z(1) +  "dark-primary-color" do#,style: {backgroundColor: "#424242"} do
 
             Navigation selection: params.current_section
 

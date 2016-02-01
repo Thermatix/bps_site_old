@@ -5,11 +5,11 @@ module Components
       param :value
 
       def render
-        style = 
+        style =
           {
             fontFamily: "\"Times New Roman\", Times, serif"
           }
-        h1 class_name: "mui--text-center mui-col-md-5", style: style do
+        h1 class_name: m_text("center") + m_col(6) + m_colof(3), style: style do
           {
             about: "Barking Photographic Society",
             gallery: "Gallery",
