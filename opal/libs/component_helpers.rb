@@ -1,7 +1,6 @@
+require_relative "mui_helpers"
 module Components
-  def col val
-    "mui-col-md-#{val}"
-  end
+
 
   def progress_bar text,value
     div do
