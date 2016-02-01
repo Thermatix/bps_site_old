@@ -28,7 +28,8 @@ module Components
 				yield(response)
 			end
 			request.on :failure do |response|
-				# TODO server failure message
+				puts "request fail"
+				puts request
 			end
 		end
 
