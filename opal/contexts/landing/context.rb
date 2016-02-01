@@ -11,10 +11,6 @@ Ruta::Context.define :about do
   component :view do
     Components::Landing::Slider
   end
-
-  component :footer do
-    Components::Landing::Footer
-  end
 end
 
 Ruta::Context.define :gallery do
