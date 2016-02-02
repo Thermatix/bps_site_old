@@ -9,18 +9,10 @@ module Components
       end
 
       def render
-        div style: scrollable do
+        div style: scrollable.merge({height: "600px"}) do
           ul class_name: m_col(12) ,style: no_bullets do
             state.listing.each do |id,item|
-              li id: id do
-                h2 class_name: m_div("bottom") do
-                  item[:date] + ' - ' + item[:title]
-                end
-
-                p do
-                  item[:body]
-                end
-              end
+              List_Item title: item[:title], date: item[:date], body: item[:body], id: id
             end
           end
         end

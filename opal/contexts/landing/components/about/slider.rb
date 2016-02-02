@@ -5,9 +5,9 @@ module Components
       define_state selection: :about
 
       def render
-        div class_name: m_panel + m_col(6) + m_colof(3) do
-          section class_name: m_row + m_colof(1) do
-            selector[state.selection][:class].render
+        div class_name: m_panel + m_col(6) + m_colof(3)do
+          section class_name: m_row + m_colof(1), style: scrollable.merge({height: "500px"})  do
+              selector[state.selection][:class].render
           end
           section class_name: m_row + m_colof(3) do
             selector.each do |item,data|
